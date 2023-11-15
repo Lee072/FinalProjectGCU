@@ -16,3 +16,28 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+table, th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+:root[data-theme="light"] {
+    background-color: white;
+    color: black;
+}
+
+:root[data-theme="dark"] {
+    background-color: black;
+    color: white;
+}

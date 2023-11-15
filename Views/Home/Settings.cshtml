@@ -7,4 +7,26 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-<p> This is where you can edit web settings</p>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/site.css" /> 
+
+ 
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+</body>
