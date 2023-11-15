@@ -28,8 +28,8 @@ table, th, td {
 }
 
 .light-mode {
-    background-color: white;
-    color: black;
+    background-color: #FFFFFF;
+    color: #0D0D0D;
 }
 
 :root[data-theme="light"] {
