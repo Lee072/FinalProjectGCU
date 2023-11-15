@@ -23,8 +23,8 @@ table, th, td {
 }
 
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
 }
 
 .light-mode {
@@ -33,11 +33,12 @@ table, th, td {
 }
 
 :root[data-theme="light"] {
-    background-color: white;
-    color: black;
+    background-color: #FFFFFF;
+    color: #0D0D0D;
 }
 
 :root[data-theme="dark"] {
-    background-color: black;
-    color: white;
+    --page-bg: #0D0D0D;
+    --primary-text: #FFFFFF;
+
 }
