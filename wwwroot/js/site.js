@@ -3,7 +3,9 @@
 
 // Write your JavaScript code.
 function darkModeToggle() {
-    element = document.body;
+    var element = document.body;
     element.classList.toggle("dark-mode");
+    element.classList.toggle("navbar-dark");
+    element.classList.toggle("headers-dark");
 }
 
