@@ -17,9 +17,24 @@ body {
   margin-bottom: 60px;
 }
 
+p {
+    text-align: center;
+}
 
+/*Settings Page*/
+.flex-container {
+    display: flex;
+    background-color: #f9f9f9S;
+}
 
+.flex-container > div {
+        background-color: white;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+}
 
+/*------------------------------------------*/
 
 
 /* Table Things*/
@@ -70,4 +85,10 @@ li {
     /*Headers*/
     h1, h2, h3, h4, title{
         text-align: center;
+    }
+
+    /*Light and Dark Modes*/
+    .dark-mode{
+        background-color:black;
+        color: white;
     }
