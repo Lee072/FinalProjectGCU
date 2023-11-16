@@ -28,23 +28,34 @@ th, td {
     text-align: left;
 }
 
-.dark-mode {
-    background-color: #0D0D0D;
-    color: #FFFFFF;
+
+/*Navbar things*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
 }
 
-.light-mode {
-    background-color: #FFFFFF;
-    color: #0D0D0D;
+li {
+    float: left;
 }
 
-:root[data-theme="light"] {
-    background-color: #FFFFFF;
-    color: #0D0D0D;
-}
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-:root[data-theme="dark"] {
-    --page-bg: #0D0D0D;
-    --primary-text: #FFFFFF;
-
-}
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #f0f0f0;
+        }
+    /*-------------------------------------------------------------------------------------------*/
+    /*Headers*/
+    h1 h2 h3 h4 title{
+        text-align: center;
+    }
