@@ -77,14 +77,15 @@ li {
         text-decoration: none;
     }
 
-        /* Change the link color to #111 (black) on hover */
-        li a:hover {
-            background-color: #f0f0f0;
-        }
+     /* Change the link color to #111 (black) on hover */
+    li a:hover {
+       background-color: #f0f0f0;
+    }
     /*-------------------------------------------------------------------------------------------*/
     /*Headers*/
     h1, h2, h3, h4, title{
         text-align: center;
+        color: black;
     }
 
     /*Light and Dark Modes*/
