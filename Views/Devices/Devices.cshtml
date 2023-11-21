@@ -1,5 +1,10 @@
 ﻿@model IEnumerable<SeniorProject.Models.DeviceModel>
 
+<script>
+    if (localStorage.getItem('dark')) {
+        body.classList.add('dark');
+    }
+</script>
 
 <p>
     <a asp-controller="Devices" asp-action="AddDevice">Add Device +</a>
@@ -47,4 +52,14 @@
     </tbody>
 </table>
 
+<script>
+    checkbox.addEventListener('change', function () {
+        localStorage.setItem('dark', this.checked);
+        if (this.checked) {
+            body.classList.add('dark')
+        } else {
+            body.classList.remove('dark')
+        }
+    });
 
+</script>

@@ -1,8 +1,27 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<script>
+    if (localStorage.getItem('dark')) {
+        body.classList.add('dark');
+    }
+</script>
+
 
 <div class="text-center">
     <h1 class="display-4">Recent Alerts</h1>
     <p>Recentlt alerted devices will be displayed here.</p>
 </div>
+
+
+<script>
+    checkbox.addEventListener('change', function () {
+        localStorage.setItem('dark', this.checked);
+        if (this.checked) {
+            body.classList.add('dark')
+        } else {
+            body.classList.remove('dark')
+        }
+    });
+
+</script>

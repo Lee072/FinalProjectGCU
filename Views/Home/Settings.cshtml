@@ -3,8 +3,15 @@
     ViewData["Title"] = "Settings";
 
 }
+<script>
+if(localStorage.getItem('dark')) {
+         body.classList.add('dark');
+    }
+ </script>
 
 <h1>@ViewData["Title"]</h1>
+
+
 
 <body>
     <div>
@@ -15,3 +22,15 @@
     </div>
  
 </body>
+
+<script>
+    checkbox.addEventListener('change', function () {
+        localStorage.setItem('dark', this.checked);
+        if (this.checked) {
+            body.classList.add('dark')
+        } else {
+            body.classList.remove('dark')
+        }
+    });
+
+</script>

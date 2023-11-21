@@ -5,4 +5,29 @@
     ViewData["Title"] = "Add A Device ";
 }
 
-<p>This is where new devices will be added</p>
+
+<script>
+    if (localStorage.getItem('dark')) {
+        body.classList.add('dark');
+    }
+</script>
+
+<html>
+    <p>This is where new devices will be added</p>
+
+</html>
+
+
+
+
+<script>
+    checkbox.addEventListener('change', function () {
+        localStorage.setItem('dark', this.checked);
+        if (this.checked) {
+            body.classList.add('dark')
+        } else {
+            body.classList.remove('dark')
+        }
+    });
+
+</script>

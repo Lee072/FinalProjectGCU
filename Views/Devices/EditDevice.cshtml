@@ -4,6 +4,31 @@
 @{
     ViewData["Title"] = "Edit A Device";
 }
-<body>
-    <p>This is where devices will be edited</p>
-</body>
+
+
+<script>
+    if (localStorage.getItem('dark')) {
+        body.classList.add('dark');
+    }
+</script>
+
+
+<html>
+
+    <body>
+        <p>This is where devices will be edited</p>
+    </body>
+
+</html>
+
+<script>
+    checkbox.addEventListener('change', function () {
+        localStorage.setItem('dark', this.checked);
+        if (this.checked) {
+            body.classList.add('dark')
+        } else {
+            body.classList.remove('dark')
+        }
+    });
+
+</script>
