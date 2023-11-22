@@ -22,7 +22,7 @@
 </html>
 
 <script>
-    checkbox.addEventListener('change', function () {
+    checkbox.addEventListener('change', darkModeToggle() {
         localStorage.setItem('dark', this.checked);
         if (this.checked) {
             body.classList.add('dark')
