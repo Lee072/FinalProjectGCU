@@ -30,6 +30,7 @@ p {
     display: flex;
     background-color: DodgerBlue;
     flex-direction: column;
+    justify-content: center;
 }
 
     .flex-container > div {
